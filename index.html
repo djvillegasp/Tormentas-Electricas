@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+ 		<meta charset="UTF-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	  	<title>Tormentas Eléctricas</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script type="text/javascript" src="js/jquery-latest.min.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/icono.png"> 
+		<script type="text/javascript">
+			function mostrarInicio() {
+				document.getElementById('inicio').style.display = 'block';
+				document.getElementById('rayos').style.display = 'none';
+				document.getElementById('truenos').style.display = 'none';
+				document.getElementById('relampagos').style.display = 'none';
+				document.getElementById('resena').style.display = 'none';
+			}
+
+			function mostrarRayos() {
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('rayos').style.display = 'block';
+				document.getElementById('truenos').style.display = 'none';
+				document.getElementById('relampagos').style.display = 'none';
+				document.getElementById('resena').style.display = 'none';
+			}
+			
+			function mostrarTruenos() {
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('rayos').style.display = 'none';
+				document.getElementById('truenos').style.display = 'block';
+				document.getElementById('relampagos').style.display = 'none';
+				document.getElementById('resena').style.display = 'none';
+			}
+			
+			function mostrarRelampagos() {
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('rayos').style.display = 'none';
+				document.getElementById('truenos').style.display = 'none';
+				document.getElementById('relampagos').style.display = 'block';
+				document.getElementById('resena').style.display = 'none';
+			}
+			
+			function mostrarResena() {
+				document.getElementById('inicio').style.display = 'none';
+				document.getElementById('rayos').style.display = 'none';
+				document.getElementById('truenos').style.display = 'none';
+				document.getElementById('relampagos').style.display = 'none';
+				document.getElementById('resena').style.display = 'block';
+			}
+		</script> 
+	</head>
+    
+	<body>
+		<nav>
+			<ul>
+    			<li><a href="javascript:void(0);" onclick="mostrarInicio();">Inicio</a></li>
+		    	<li><a href="javascript:void(0);" onclick="mostrarRayos();">Rayos</a></li>
+				<li><a href="javascript:void(0);" onclick="mostrarTruenos();">Truenos</a></li>
+    			<li><a href="javascript:void(0);" onclick="mostrarRelampagos();">Relámpagos</a></li>
+				<li><a href="javascript:void(0);" onclick="mostrarResena();">Deja tu reseña</a></li>
+  			</ul>
+  			<div class="hide">
+    			<i class="fa fa-bars" aria-hidden="true"></i>Menú
+  			</div>
+		</nav>
+		<script>
+			$(".hide").on('click', function() {
+	      	$("nav ul").toggle('slow');
+   	 	})
+  		</script>
+        
+        <main>         
+            <section id="inicio">
+           	    <div id="titulo_principal">
+	                <h1>Tormentas eléctricas</h1>
+	            </div>
+	            <div id="texto_principal">
+                    <p>
+	                    Las tormentas eléctricas, grandes fenómenos metereológicos que generan otros grandes fenómenos como lo son los
+   	                    rayos, los truenos y los relámpagos. Conoce la diferencia de estos fenómenos a través de nuesta página web.
+                    </p>
+                </div>
+           	    <div class="video_inicial">
+           		    <video controls>
+             		    <source src="videos/video1.mp4" type="video/mp4"/>
+            	    </video>
+                </div>
+			</section>   
+
+			<section id="rayos">
+			    <div class="texto_explicativo">
+         		    <h2>Rayos</h2>         	    
+                
+                    <p>
+                        Se trata de la descarga eléctrica que se produce en un corto espacio de tiempo. Según lo define la Real Academia Española (RAE),
+                        es la "chispa eléctrica de gran intensidad producida por descarga entre dos nubes o entre una nube y la tierra".
+                        </br></br>
+                        En cuanto al rayo, Heraud precisa que es una descarga eléctrica que se produce por fricción entre nubes o entre nubes y la Tierra.
+                        En ambos casos, debe haber diferencias de voltajes.
+                        </br></br>
+                        Cuando estas cargas se atraen se comienzan a formar los rayos.Uno de estos fenómenos puede tener una potencia de 1 gigawatt
+                        (mil millones de vatios). El rayo tiene una longitud aproximada de 1.500 metros y el más extenso fue registrado en Texas el
+                        año 2001, cuando alcanzó 190 kilómetros. Pueden llegar del cielo a la Tierra a unos a 200.000 km/h.
+                   </p>
+                </div>         	             		        		
+        		<aside>
+                    <div class="img_vid">
+                        <img src="imagenes/rayo1.jpg" alt="Imagen con rayos" title="Imagen con rayos"/>
+                        <img src="imagenes/rayo2.jpg" alt="Imagen con rayos" title="Imagen con rayos"/>
+               
+                        <video controls>
+                            <source src="videos/videorayo.mp4" type="video/mp4"/>
+                        </video>
+                    </div>                        
+                </aside>                                
+            </section>
+        
+        
+            <section id="truenos">
+                <div class="texto_explicativo">
+                    <h2>Truenos</h2>    
+                    <p>
+                        El trueno es el sonido que se escucha durante una tormenta eléctrica. Se forma cuando un rayo calienta el aire por el que
+                        se mueve a más de 28.000ºC.
+                        </br></br>
+                        Este aire caliente se expande a gran velocidad y se junta con el frío del entorno, provocando que baje su temperatura y
+                        contraiga. Esta contracción genera ondas de choque y por ello el ruido del trueno.
+                    </p>
+                </div>
+                
+                <aside>
+                    <div class="img_vid">
+                        <img src="imagenes/trueno1.jpg" alt="Imagen con truenos" title="Imagen con truenos"/>
+                        <img src="imagenes/trueno2.jpg" alt="Imagen con truenos" title="Imagen con truenos"/>
+
+                        <video controls>
+                            <source src="videos/videotrueno.mp4" type="video/mp4"/>
+                        </video>
+                    </div>              
+                </aside>
+            </section>
+    
+            <section id="relampagos">
+                <div class="texto_explicativo">
+                    <h2>Relámpagos</h2>    
+                    <p>
+                        Un relámpago es la luz que se puede observar cuando se produce la tormenta eléctrica. A diferencia de los rayos, no llegan a
+                        tocar tierra pese a que se forman de la misma manera. Tal y como detalla la RAE, es el "resplandor vivísimo e instantáneo
+                        producido en las nubes por una descarga eléctrica".
+                        </br></br>
+                        Cuando ocurre la descarga eléctrica en una tormenta, podemos ver inmediatamente el relámpago y después viene el trueno. 
+                        Esto se debe a que este destello viaja a la velocidad de la luz (300.000 km/s), la cual es más rápida que la del sonido
+                        (340 m/s). Del mismo modo, no se puede hacer cálculo de la distancia a la que estamos del evento, porque la velocidad de
+                        la luz es demasiado rápida.
+                    </p>
+                </div>            
+    
+                <aside>
+                    <div class="img_vid">
+                        <img src="imagenes/relampago1.jpg" alt="Imagen con relámpagaos" title="Imagen con relámpagos"/>
+                        <img src="imagenes/relampago2.jpg" alt="Imagen con relámpagaos" title="Imagen con relámpagos"/>
+
+                        <video controls>
+                            <source src="videos/videorelampago.mp4" type="video/mp4"/>
+                        </video>
+                    </div>            
+                </aside>
+            </section>
+    
+            <section id="resena">
+                <h2 id="comentario">¡Déjanos un comentario sobre el contenido visto!</h2>    
+                <div class="comentarios">
+                    <form>
+                        <label for="Nombre">Nombre:</label>
+                        <input type="text" placeholder="Escribe tu nombre">                
+                        <br/><br/>                
+                        <label for="Comentario">Escribe tu comentario:</label>
+                        <textarea name="textarea" placeholder="Escribe aquí tu comentario" cols="50"></textarea>
+                        <br/><br/>                
+                        <input type="submit">
+                    </form>
+                </div>
+                
+                <div class="bibliografia">
+                    <h3>Referencias bibliográficas</h3>
+                    <ul>
+                        <li
+                        >El Comercio. (2021). Rayos, relámpagos y truenos: ¿Cuál es su diferencia?. Recuperado de: 
+                        <a target="_blank" href="https://elcomercio.pe/tecnologia/ciencias/rayos-relampagos-y-truenos-cual-es-su-diferencia-tormentas-fenomenos-meteorologicos-noticia/">
+                            https://elcomercio.pe/tecnologia/ciencias/rayos-relampagos-y-truenos-cual-es-su-diferencia-tormentas-fenomenos-meteorologicos-noticia/
+                        </a>                        
+                        </li>
+                        <li>
+                            As. (2021). Rayos, truenos y relámpagos: ¿qué son cada uno y en qué se diferencian?. Recuperado de: 
+                            <a target="_blank" href="https://as.com/diarioas/2021/09/01/actualidad/1630508897_402280.html">
+                                https://as.com/diarioas/2021/09/01/actualidad/1630508897_402280.html
+                            </a>                        
+                        </li>
+                        <li>
+                            National Geographic España. (2019). Tormentas eléctricas 101 | National Geographic en Español. [Archivo de video].
+                            Recuperado de: 
+                            <a target="_blank" href="https://www.youtube.com/watch?v=3rYhVP9ORYk&t">
+                                https://www.youtube.com/watch?v=3rYhVP9ORYk&t
+                            </a>
+                        </li>
+                        <li>
+                            History Latinoamérica. (2020). INEXPLICABLE – Río Catatumbo. [Archivo de video]. Recuperado de: 
+                            <a target="_blank" href="https://www.youtube.com/watch?v=a7TVkwdXw6k&t">
+                                https://www.youtube.com/watch?v=a7TVkwdXw6k&t
+                            </a>                        
+                        </li>
+                        <li>
+                            Espectro Canal UCR. (2017). ¿Cómo se producen los rayos?. [Archivo de video]. Recuperado de: 
+                            <a target="_blank" href="https://www.youtube.com/watch?v=zOUUDOIlybI">
+                                https://www.youtube.com/watch?v=zOUUDOIlybI
+                            </a>                        
+                        </li>
+                        <li>                    
+                            Aprendo con Bryan. (2018). ¿Por qué ocurren los Truenos?. [Archivo de video]. Recuperado de: 
+                            <a target="_blank" href="https://www.youtube.com/watch?v=oiYRRRK3aZ8">
+                                https://www.youtube.com/watch?v=oiYRRRK3aZ8
+                            </a>                        
+                        </li>
+                    </ul>
+                </div>            
+            </section>           	
+        </main>
+	</body>	
+
+    <footer>
+        Desarrollador: Diego José Villegas Pérez - 2021 <br/>UNAD - Universidad Nacional Abierta y a Distancia
+    </footer>
+</html>
